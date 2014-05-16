@@ -1,7 +1,10 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js"> <!--<![endif]-->
 <head>
@@ -20,30 +23,38 @@
 </head>
 <body ng-app="wdesignsApp">
 <!--[if lt IE 7]>
-  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please
+    <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <!-- Add your site or application content here -->
 <div class="container">
     <!-- Header is only instantiated once -->
     <header class="row">
-        <hgroup class="col-xs-12 col-sm-4">
-            <h1>W Designs</h1>
+        <a href="#/">
+            <hgroup class="col-xs-12 col-sm-4">
+                <h1>W Designs</h1>
 
-            <h2>A Collaborative Concept</h2>
-        </hgroup>
+                <h2>A Collaborative Concept</h2>
+            </hgroup>
+        </a>
         <nav class="col-xs-12 col-sm-8">
             <ul class="nav nav-pills pull-right">
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#/services">Services</a></li>
+                <li><a href="#/portfolio">Portfolio</a></li>
+                <li><a href="#/about">About</a></li>
+                <li><a href="#/contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Add your site or application content here -->
     <div ng-view=""></div>
+    <footer>
+        <div class="text-center text-muted">Designed and Developed in Northern California with
+            <span class="glyphicon glyphicon-heart"></span>
+        </div>
+    </footer>
 </div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
