@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name wdesignsApp.controller:MainCtrl
+ * @name wdesignsApp.controller:AboutCtrl
  * @description
- * # MainCtrl
+ * # AboutCtrl
  * Controller of the wdesignsApp
  */
 angular.module('wdesignsApp')
-  .controller('MainCtrl', function($scope) {
+  .controller('AboutCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
