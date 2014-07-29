@@ -8,10 +8,6 @@
  * Controller of the wdesignsApp
  */
 angular.module('wdesignsApp')
-  .controller('ContactCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('ContactCtrl', function ($scope, wdesignsData) {
+    this.contacts = wdesignsData.content.contacts;
   });

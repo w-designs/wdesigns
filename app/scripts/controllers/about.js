@@ -8,10 +8,6 @@
  * Controller of the wdesignsApp
  */
 angular.module('wdesignsApp')
-  .controller('AboutCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('AboutCtrl', function ($scope, wdesignsData) {
+    this.profiles = wdesignsData.content.profiles;
   });

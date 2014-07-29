@@ -68,6 +68,13 @@ header h3 {
   }
 }
 
+/* About page */
+.about {
+  .profile-header {
+    text-align: center;
+  }
+}
+
 /* Contact page */
 .contacts {
   li {
@@ -139,6 +146,12 @@ footer {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+  /* About page */
+  .about {
+    .profile-header {
+      text-align: left;
+    }
   }
   footer {
     background: rgba(238, 238, 238, 0.5);

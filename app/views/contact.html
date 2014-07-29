@@ -1,1 +1,8 @@
-<p>This is the contact view.</p>
+<div class="row">
+  <div class="col-xs-12 col-md-6" ng-repeat="contact in contact.contacts">
+    <dl>
+      <dt>{{ contact.name }}</dt>
+      <dd>{{ contact.title }}</dd>
+    </dl>
+  </div>
+</div>

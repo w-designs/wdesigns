@@ -1,1 +1,9 @@
-<p>This is the about view.</p>
+<div ng-repeat="profile in about.profiles" class="row about">
+  <div class="col-xs-offset-4 col-xs-4 col-sm-offset-0 col-sm-2">
+    <img ng-src="{{profile.image}}" alt="Portrait of {{profile.name}}" class="img-responsive img-circle center-block"/>
+  </div>
+  <div class="col-xs-12 col-sm-10">
+    <h3 class="profile-header">{{profile.name}}</h3>
+    <p ng-repeat="paragraph in profile.paragraphs">{{paragraph}}</p>
+  </div>
+</div>

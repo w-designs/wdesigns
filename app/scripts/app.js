@@ -17,31 +17,56 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function($routeProvider) {
+  .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        controller: 'MainCtrl',
+        controllerAs: 'main'
       })
       .when('/services', {
         templateUrl: 'views/services.html',
-        controller: 'ServicesCtrl'
+        controller: 'ServicesCtrl',
+        controllerAs: 'services',
+        // TODO: abstract this repeated resolve function either to each controller or to a service to be injected
+        resolve: {
+          get: function (wdesignsData) {
+            return wdesignsData.getData();
+          }
+        }
       })
       .when('/portfolio', {
         templateUrl: 'views/portfolio.html',
-        controller: 'PortfolioCtrl'
+        controller: 'PortfolioCtrl',
+        controllerAs: 'portfolio',
+        // TODO: abstract this repeated resolve function either to each controller or to a service to be injected
+        resolve: {
+          get: function (wdesignsData) {
+            return wdesignsData.getData();
+          }
+        }
       })
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        controller: 'AboutCtrl',
+        controllerAs: 'about',
+        // TODO: abstract this repeated resolve function either to each controller or to a service to be injected
+        resolve: {
+          get: function (wdesignsData) {
+            return wdesignsData.getData();
+          }
+        }
       })
       .when('/contact', {
         templateUrl: 'views/contact.html',
-        controller: 'ContactCtrl'
+        controller: 'ContactCtrl',
+        controllerAs: 'contact',
+        // TODO: abstract this repeated resolve function either to each controller or to a service to be injected
+        resolve: {
+          get: function (wdesignsData) {
+            return wdesignsData.getData();
+          }
+        }
       })
       .otherwise({
         redirectTo: '/'

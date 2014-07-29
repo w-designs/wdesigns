@@ -1,1 +1,11 @@
-<p>This is the portfolio view.</p>
+<div class="row" ng-repeat="project in portfolio.projects">
+  <div class="col-xs-12 col-md-3">
+    <dl>
+      <dt>{{ project.name }}</dt>
+      <dd>{{ project.description }}</dd>
+    </dl>
+  </div>
+  <div class="col-xs-12 col-md-9">
+    <img class="img-responsive center-block" ng-src="{{ project.image }}" alt="Screenshot of {{ project.name }}"/>
+  </div>
+</div>
