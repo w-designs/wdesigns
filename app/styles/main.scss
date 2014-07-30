@@ -3,6 +3,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
 // endbower
 
+/* Variables */
+$wd-blue: #3a71e1;
+$wd-turquoise: #69fff2;
+$wd-orange: orange;
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -12,8 +17,9 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 
 /* Space out content a bit */
 body {
-  padding-top: 10px;
   padding-bottom: 10px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -26,28 +32,46 @@ footer {
 
 /* Custom page header */
 header {
-  hgroup {
-    margin-bottom: 10px;
-  }
-  h1, h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  h2 {
-    font-size: 1.5em;
-    color: #777;
-  }
+  background-color: $wd-orange;
+  padding: 10px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: relative;
   nav {
-    margin-top: 10px;
+    line-height: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    li {
+      margin-right: 4px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      a {
+        background-color: darken($wd-blue, 15);
+        color: #fff;
+      }
+    }
+    .nav-pills {
+      .active {
+        a, a:hover, a:focus {
+          background-color: $wd-blue;
+          color: #fff;
+        }
+      }
+    }
   }
+//  h1, h2 {
+//    margin-top: 0;
+//    margin-bottom: 0;
+//  }
+//  h2 {
+//    font-size: 1.5em;
+//    color: #777;
+//  }
 }
-
-/* Make the masthead heading the same height as the navigation */
-header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
+.header-pattern {
+  background-color: lighten($wd-orange, 15);
 }
 
 /* Services offered cards */
@@ -57,7 +81,7 @@ header h3 {
     //    font-size: 2em;
   }
   .service {
-    height: 200px;
+    min-height: 200px;
     background: rgba(238, 238, 238, 0.5);
     padding: 1em;
     border-radius: 6px;
@@ -69,14 +93,32 @@ header h3 {
 }
 
 /* About page */
-.about {
+.about-page {
   .profile-header {
     text-align: center;
+    color: slategrey;
+    font-size: 2em;
+    letter-spacing: 1px;
+    font-weight: 200;
   }
 }
 
 /* Contact page */
-.contacts {
+.contact-page {
+  dt {
+    color: slategrey;
+    font-size: 2em;
+    letter-spacing: 1px;
+    font-weight: 200;
+    margin-bottom: -6px;
+  }
+  dd {
+    font-weight: 400;
+    color: #111;
+
+  }
+
+  //  Don't remember what this is for
   li {
     i + span {
       display: block;
@@ -141,14 +183,13 @@ footer {
   /* Space out the masthead */
   header {
     margin-bottom: 30px;
-    border-bottom: 1px solid #e5e5e5;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
   }
   /* About page */
-  .about {
+  .about-page {
     .profile-header {
       text-align: left;
     }

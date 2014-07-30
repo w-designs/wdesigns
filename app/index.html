@@ -22,14 +22,8 @@
 
   <!-- Add your site or application content here -->
   <div class="container">
-    <header class="row">
-      <a href="#/">
-        <hgroup class="col-xs-12 col-sm-4">
-          <h1>W Designs</h1>
-          <h2>A Collaborative Concept</h2>
-        </hgroup>
-      </a>
-      <nav class="col-xs-12 col-sm-8" ng-controller="NavCtrl">
+    <header ng-controller="NavCtrl" ng-class="{'header-pattern': !isActive('/')}">
+      <nav>
         <ul class="nav nav-pills pull-right">
           <li ng-class="{'active': isActive('/')}"><a href="#/">Home</a></li>
           <li ng-class="{'active': isActive('/services')}"><a href="#/services">Services</a></li>
@@ -38,6 +32,13 @@
           <li ng-class="{'active': isActive('/contact')}"><a href="#/contact">Contact</a></li>
         </ul>
       </nav>
+      <a href="#/">
+        <hgroup>
+          <h1 class="sr-only">W Designs</h1>
+          <h2 class="sr-only">A Collaborative Concept</h2>
+          <img src="./images/wdesigns-logo.svg" alt="W Designs logo" class="img-responsive"/>
+        </hgroup>
+      </a>
     </header>
     <div ng-view=""></div>
     <footer class="footer text-center" ng-controller="FooterCtrl">

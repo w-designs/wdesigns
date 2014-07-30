@@ -44,11 +44,17 @@
   "contacts": [
     {
       "name": "Talitha Wesson",
-      "title": "Creative Director"
+      "title": "Creative Director",
+      "number": "707-331-3815",
+      "email": "email@server.com",
+      "image": "./images/yeoman.png"
     },
     {
       "name": "Jeff Wesson",
-      "title": "Lead Developer"
+      "title": "Lead Developer",
+      "number": "707-303-0084",
+      "email": "jeff@jeffwesson.com",
+      "image": "./images/yeoman.png"
     }
   ]
 }
