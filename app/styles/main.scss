@@ -59,6 +59,11 @@ header {
       }
     }
     .nav-pills {
+      > li {
+        a {
+          border-radius: 75px / 150px;
+        }
+      }
       .active {
         a, a:hover, a:focus {
           background-color: $wd-blue;
