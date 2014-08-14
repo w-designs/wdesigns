@@ -8,6 +8,6 @@
  * Controller of the wdesignsApp
  */
 angular.module('wdesignsApp')
-  .controller('AboutCtrl', function($scope, wdesignsData) {
+  .controller('AboutCtrl', function ($scope, wdesignsData) {
     this.profiles = wdesignsData.content.profiles;
   });

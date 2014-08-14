@@ -8,8 +8,8 @@
  * Controller of the wdesignsApp
  */
 angular.module('wdesignsApp')
-  .controller('NavCtrl', function($scope, $location) {
-    $scope.isActive = function(route) {
+  .controller('NavCtrl', function ($scope, $location) {
+    $scope.isActive = function (route) {
       return route === $location.path();
     };
   });

@@ -8,8 +8,8 @@
  * Controller of the wdesignsApp
  */
 angular.module('wdesignsApp')
-  .controller('FooterCtrl', function($scope) {
-    $scope.getYear = function() {
+  .controller('FooterCtrl', function ($scope) {
+    $scope.getYear = function () {
       return new Date().getFullYear().toString();
     };
   });

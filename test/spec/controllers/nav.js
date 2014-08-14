@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Controller: NavCtrl', function() {
+describe('Controller: NavCtrl', function () {
 
   // load the controller's module
   beforeEach(module('wdesignsApp'));
@@ -9,7 +9,7 @@ describe('Controller: NavCtrl', function() {
     scope;
 
   // Initialize the controller and a mock scope
-  beforeEach(inject(function($controller, $rootScope) {
+  beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
     NavCtrl = $controller('NavCtrl', {
       $scope: scope
@@ -17,7 +17,7 @@ describe('Controller: NavCtrl', function() {
   }));
 
   // $scope.isActive returns the user's location path
-  it('should return users location path', function() {
+  it('should return users location path', function () {
     expect(scope.isActive()).toBe(/^#\//);
   });
 });

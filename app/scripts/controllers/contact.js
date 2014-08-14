@@ -8,6 +8,6 @@
  * Controller of the wdesignsApp
  */
 angular.module('wdesignsApp')
-  .controller('ContactCtrl', function($scope, wdesignsData) {
+  .controller('ContactCtrl', function ($scope, wdesignsData) {
     this.contacts = wdesignsData.content.contacts;
   });

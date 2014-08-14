@@ -8,6 +8,6 @@
  * Controller of the wdesignsApp
  */
 angular.module('wdesignsApp')
-  .controller('PortfolioCtrl', function($scope, wdesignsData) {
+  .controller('PortfolioCtrl', function ($scope, wdesignsData) {
     this.projects = wdesignsData.content.projects;
   });

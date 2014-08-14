@@ -17,7 +17,7 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function($routeProvider) {
+  .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -30,7 +30,7 @@ angular
         controllerAs: 'services',
         // TODO: abstract this repeated resolve function either to each controller or to a service to be injected
         resolve: {
-          get: function(wdesignsData) {
+          get: function (wdesignsData) {
             return wdesignsData.getData();
           }
         }
@@ -41,7 +41,7 @@ angular
         controllerAs: 'portfolio',
         // TODO: abstract this repeated resolve function either to each controller or to a service to be injected
         resolve: {
-          get: function(wdesignsData) {
+          get: function (wdesignsData) {
             return wdesignsData.getData();
           }
         }
@@ -52,7 +52,7 @@ angular
         controllerAs: 'about',
         // TODO: abstract this repeated resolve function either to each controller or to a service to be injected
         resolve: {
-          get: function(wdesignsData) {
+          get: function (wdesignsData) {
             return wdesignsData.getData();
           }
         }
@@ -63,7 +63,7 @@ angular
         controllerAs: 'contact',
         // TODO: abstract this repeated resolve function either to each controller or to a service to be injected
         resolve: {
-          get: function(wdesignsData) {
+          get: function (wdesignsData) {
             return wdesignsData.getData();
           }
         }
