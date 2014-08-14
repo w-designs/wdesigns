@@ -8,11 +8,11 @@
  * Factory in the wdesignsApp.
  */
 angular.module('wdesignsApp')
-  .factory('wdesignsData', function ($http) {
+  .factory('wdesignsData', function($http) {
     var wdesignsData = {};
-    wdesignsData.getData = function () {
+    wdesignsData.getData = function() {
       $http.get('./scripts/models/wdesigns.json')
-        .success(function (response) {
+        .success(function(response) {
           wdesignsData.content = response ? response : [];
         });
     };
