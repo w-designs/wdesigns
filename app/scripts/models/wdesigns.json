@@ -1,12 +1,42 @@
 {
-  "services": [
+  "webServices": [
     {
-      "type": "Web Services",
-      "description": "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duiwefeyuvewuw dfhb hb kef dkhbv ekergb erk kb riub wkwbf wiw i ibfwiefbwiefb iwbib wirub rkjhbwieufh rigbw wiuef wfwbfeiw weifyb weifub wie wiefb wiebf iwuqeb qevfqt wvqeifub riubw rig wirbwi yb wib iwub wiu ergu iwurgb wieufboeufb"
+      "name": "Custom websites",
+      "description": "This is the service description, blah blah blah..."
     },
     {
-      "type": "Graphic Design Services",
-      "description": "fqt wvqeifub riubw rig wirbwi yb wib iwub wiu ergu iwurgb wieufboeufb ejwhfbw wu wu wyeufvue yweu  eiwufew iwef euwf ewifu ewieu iwef uew irhiurhqw qwu qiug q vebfiuefb qiebehuc qefqiewufbqeif bchcbweubfewi fuweiufb weiufb iwebfwei ufbweiu fweiubf wei beiwuvb eiu bwieu bwivbenderit in volu"
+      "name": "Mobile first design",
+      "description": "This is the service description, blah blah blah..."
+    },
+    {
+      "name": "User experience design",
+      "description": "This is the service description, blah blah blah..."
+    },
+    {
+      "name": "Angularjs",
+      "description": "This is the service description, blah blah blah..."
+    }
+  ],
+  "graphicServices": [
+    {
+      "name": "Branding Design",
+      "description": "This is the service description, blah blah blah..."
+    },
+    {
+      "name": "Illustration",
+      "description": "This is the service description, blah blah blah..."
+    },
+    {
+      "name": "Layout Design",
+      "description": "This is the service description, blah blah blah..."
+    },
+    {
+      "name": "Image manipulation",
+      "description": "This is the service description, blah blah blah..."
+    },
+    {
+      "name": "Retouching",
+      "description": "This is the service description, blah blah blah..."
     }
   ],
   "projects": [
